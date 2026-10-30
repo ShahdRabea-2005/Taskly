@@ -1,0 +1,32 @@
+name: taskly
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  
+  # تمت إضافة حزمة الـ Bloc هنا لتتوافق مع الشاشات
+  flutter_bloc: ^8.1.3
+  
+  # حزمة الـ Provider الأساسية
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # أضيفي مسارات الصور أو الخطوط هنا لاحقاً إذا احتجتِ
+  # assets:
+  #   - assets/images/
