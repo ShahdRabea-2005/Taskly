@@ -123,7 +123,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: const Color(0xFF2D2C44), // لون الكارت الداكن المتناسق
+        color: const Color(0xFF2D2C44),
         borderRadius: BorderRadius.circular(20),
         border: Border.all(color: Colors.white.withOpacity(0.05)),
       ),
