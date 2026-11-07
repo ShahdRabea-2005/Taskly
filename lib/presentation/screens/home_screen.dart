@@ -39,7 +39,6 @@ class _HomeScreenState extends State<HomeScreen> {
     super.dispose();
   }
 
-  // إضافة إشعار جديد محلياً وفي فايربيز
   void _addNotification(String message) {
     final notifData = {'message': message, 'time': 'Just now', 'isRead': false};
     notifBox.add(notifData);
