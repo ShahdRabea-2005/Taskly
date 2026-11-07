@@ -51,7 +51,6 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
-  // شاشة الإشعارات المنسدلة (Notifications BottomSheet) المطابقة للبروتوتايب
   void _showNotificationsSheet(BuildContext context) {
     showModalBottomSheet(
       context: context,

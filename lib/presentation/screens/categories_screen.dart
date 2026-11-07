@@ -21,7 +21,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
   Widget build(BuildContext context) {
     List tasks = tasksBox.values.toList();
 
-    // دالة لحساب عدد المهام وعدد الـ pending لكل فئة
     Map<String, Map<String, int>> getCategoryStats() {
       Map<String, Map<String, int>> stats = {
         'Personal': {'total': 0, 'pending': 0},
@@ -47,9 +46,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
     final stats = getCategoryStats();
 
     return Scaffold(
-      backgroundColor: const Color(
-        0xFF1F1E31,
-      ), // الخلفية الداكنة المميزة لشاشة التصنيفات في البروتوتايب
+      backgroundColor: const Color(0xFF1F1E31),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 16.0),

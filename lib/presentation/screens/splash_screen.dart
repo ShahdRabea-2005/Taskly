@@ -28,7 +28,6 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: const Color(0xFFF8F5FF),
       body: Stack(
         children: [
-          // دوائر الخلفية التصميمية الأصلية
           Positioned(
             top: -50,
             left: -50,

@@ -10,7 +10,6 @@ class SignupScreen extends StatefulWidget {
 }
 
 class _SignupScreenState extends State<SignupScreen> {
-  // مفتاح الفورمة للتحقق من الحقول
   final _formKey = GlobalKey<FormState>();
 
   final TextEditingController nameController = TextEditingController();
@@ -49,7 +48,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 horizontal: 24.0,
                 vertical: 16.0,
               ),
-              // ربطنا الفورمة هنا عشان نقدر نتحقق من الحقول
+
               child: Form(
                 key: _formKey,
                 child: Column(
@@ -149,7 +148,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     ),
                     const SizedBox(height: 16),
 
-                    // حقل كلمة المرور
+                    //  كلمة المرور
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -193,9 +192,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       height: 55,
                       child: ElevatedButton(
                         onPressed: () {
-                          // التحقق مما إذا كانت جميع الحقول صالحة وغير فارغة
                           if (_formKey.currentState!.validate()) {
-                            // لو البيانات مكتوبة، ينتقل لصفحة الـ Login أو الرئيسية
                             Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
@@ -203,7 +200,6 @@ class _SignupScreenState extends State<SignupScreen> {
                               ),
                             );
                           } else {
-                            // لو فيه خانة فاضية، تظهر رسالة تنبيه للمستخدم
                             ScaffoldMessenger.of(context).showSnackBar(
                               const SnackBar(
                                 content: Text('يجب إدخال بياناتي بشكل كامل!'),
